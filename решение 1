@@ -14,7 +14,9 @@ namespace task1820
             }
             else
             {
-                Console.WriteLine(((n / k)+1)*2);
+                int g = n % k;
+                n -= g;
+                Console.WriteLine((n/k)+2);
             }
         }
     }
